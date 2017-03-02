@@ -1,0 +1,15 @@
+TODO: Visitor - XML
+---------------------------------------------------------------------
+
+Schreibe Sie für die gegebene Baustruktur (Item, ItemList) eine Klasse 
+"XmlVisitorImpl" welche das Interface "XmlVisitor" implementiert.
+
+Jede visit Methode soll aus dem Parameter-Objekt einen XML String
+erzeugen und zurück geben.
+
+Die Navigation erfolgt innerhalb der "XmlVisitorImpl" Klasse (es sind
+keine accept Methoden notwendig).
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "XmlVisitorTest".
+
+ 

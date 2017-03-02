@@ -1,0 +1,31 @@
+TODO: Visitor Pattern
+---------------------------------------------------------------------
+
+Nennen Sie das Projekt (und das abgegebene ZIP File) so um, dass statt
+"MyName" Ihr Name verwendet wird.
+Beachten Sie, dass Projekte die nicht der Namenskonvention entsprechen
+negativ (0 Punkte) beurteilt werden!
+
+Achten Sie auch darauf, dass Ihr abgegebenes Projekt keine Compiler-
+Errors enthält. Projekte die nicht kompilieren werden ebenfalls mit 
+0 Punkten bewertet!
+
+
+1. Visitor Pattern  
+---------------------------------------------------------------------
+1.1 Definieren Sie ein Interface "ContainerVisitor", das eine visit()
+	Methode für alle Typen (Product, Container, Component) der Baumstruktur 
+	enthält.
+	
+1.2 Implementieren Sie jeweils eine konkrete Visitor Klasse:
+	a) "ContainerVisitorPrice" welcher den Gesamtpreis aller Produkte des
+		Containers ermittelt - siehe "ContainerVisitorPriceTest".
+	b) "ContainerVisitorWeight" welcher das Gesamtgewicht aller Produkte
+		des Containers berechnet - siehe "ComponentVisitorWeightTest".
+
+					
+2. Refactoring
+---------------------------------------------------------------------
+Reduzieren Sie die Redundanzen in Ihren Klassen ohne die Funktionalität
+zu verändern.
+

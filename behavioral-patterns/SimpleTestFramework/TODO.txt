@@ -1,0 +1,7 @@
+Exercise: Simple Testing Framework
+---------------------------------------------------------------------
+
+Analysieren Sie das vorliegende Beispiel und finden Sie heraus, welche
+Design Pattern hier eingesetzt wurden.
+
+Begründen Sie Ihre Entscheidung.
