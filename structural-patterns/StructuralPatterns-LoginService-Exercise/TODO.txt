@@ -15,7 +15,7 @@ auf der Console ausgegeben werden.
 
 1.2 EncodingDecorator
 ---------------------------------------------------------------------
-Es soll der Wert des Parameters "password" in einen MD5 Hashvalue
+Es soll der Wert des Parameters "password" in einen SHA-256 Hashvalue
 umgerechnet werden - siehe "EncodingDecorator".
 
 1.3 ValidationDecorator

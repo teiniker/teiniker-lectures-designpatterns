@@ -7,27 +7,7 @@ import java.security.NoSuchAlgorithmException;
 class EncodingDecorator // package private
 	extends LoginServiceDecorator
 {
-	/*
-	 * Constructor Injection
-	 */
-	public EncodingDecorator(LoginService service)
-	{
-		super(service);
-	}
-	
-	
-	@Override
-	public void addUser(int id, String username, String password, String mail)
-	{
-		super.addUser(id, username, toSHA256(password), mail);
-	}
 
-	@Override
-	public boolean login(String username, String password)
-	{
-		return super.login(username, toSHA256(password));
-	}
-	
 	
 	/*
 	 * Utility methods

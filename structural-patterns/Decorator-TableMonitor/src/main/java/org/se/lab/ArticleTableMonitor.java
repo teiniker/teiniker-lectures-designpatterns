@@ -22,7 +22,7 @@ class ArticleTableMonitor // package private
     {
     	long start = System.currentTimeMillis();
     	
-    	List<Article> list = super.findAll();
+    	List<Article> list = super.findAll();	// delegation
     	
         long stop = System.currentTimeMillis();
         logger.info("findAll() duration = " + (stop-start) + "ms");
