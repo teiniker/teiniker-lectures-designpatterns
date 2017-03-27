@@ -5,8 +5,10 @@ import static java.lang.System.out;
 import java.util.List;
 
 class PersonTablePostgresql
-    extends PersonTableHsqldb
+    implements PersonTable
 {
+    protected Person person;
+    
     public void insert(Person p)
     {
         out.println("postgresql> insert " + p);
