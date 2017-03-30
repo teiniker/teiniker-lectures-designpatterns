@@ -5,15 +5,6 @@ import java.util.List;
 public abstract class ListProcessor
 {
     /*
-     * Constructor 
-     */
-    public ListProcessor()
-    {
-        System.out.println("ListProcessor.ListProcessor() - constructor");
-    }
-    
-    
-    /*
      * Template Method
      */
     
