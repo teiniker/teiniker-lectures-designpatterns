@@ -51,11 +51,6 @@ Examples in the Java API: Comparator<T>, Runnable
 	public interface Comparator<T> {
 	   int compare(T o1, T o2);
 	}
-
-	@FunctionalInterface
-	public interface Runnable {
-	    public abstract void run();
-	}
       
 Note that interfaces can have default methods (that is a method with a body that 
 provides some default implementation for a method in case it isn't implemented by 
@@ -81,3 +76,57 @@ function description.
 A lambda expression can be assigned to a variable or passed to a method expecting
 a functional interface as argument, provided the lambda expression has the same 
 signature as the abstract method of the functional interface.
+
+
+Examples of Functional Interfaces in java.util.function:
+
+    /**
+     * Evaluates this predicate on the given argument.
+     */
+	@FunctionalInterface
+	public interface Predicate<T> 
+	{
+	    boolean test(T t);
+	}
+
+
+    /**
+     * Performs this operation on the given argument.
+     */
+	@FunctionalInterface
+	public interface Consumer<T> 
+	{
+	    void accept(T t);
+	}
+
+
+    /**
+     * Applies this function to the given argument.
+     */
+	@FunctionalInterface
+	public interface Function<T, R> 
+	{
+	
+	    R apply(T t);	
+	}	
+	
+	
+Method References
+-------------------------------------------------------------------------------        
+Method references let you reuse existing method definitions and pass them just
+like lambdas.
+
+The basic idea is that if a lambda represents "call this method directly" it is
+best to refer to the method my name rather than by a description of how to call
+it.
+
+Example: 
+	(String s) -> System.out.println(s)
+	
+	(String s) -> System.out::println
+	
+We can think of method references as syntactic sugar for lambdas that refer only
+to a single method because we write less to express the same thing.
+
+	
+	
