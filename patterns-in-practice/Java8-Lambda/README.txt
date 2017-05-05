@@ -123,7 +123,7 @@ it.
 Example: 
 	(String s) -> System.out.println(s)
 	
-	(String s) -> System.out::println
+	System.out::println
 	
 We can think of method references as syntactic sugar for lambdas that refer only
 to a single method because we write less to express the same thing.
