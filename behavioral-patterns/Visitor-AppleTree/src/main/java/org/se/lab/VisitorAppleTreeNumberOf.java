@@ -53,6 +53,9 @@ public class VisitorAppleTreeNumberOf
 	
 	public void visit(Branch branch)
 	{
+		// operation
+		
+		// navigation
 		for(Node n : branch.getNodes())
 		{
 			visit(n);
@@ -61,7 +64,10 @@ public class VisitorAppleTreeNumberOf
 	
 	public void visit(Leaf leaf)
 	{
+		// operation
 		numberOfLeafs++;
+		
+		// navigation
 	}
 	
 	public void visit(GreenApple apple)

@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class ControllerUpward
+class ControllerUpward
 	implements ControllerState
 {
 	public static final ControllerState INSTANCE = new ControllerUpward();

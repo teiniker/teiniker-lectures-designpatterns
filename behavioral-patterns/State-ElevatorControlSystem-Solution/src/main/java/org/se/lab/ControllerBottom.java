@@ -1,10 +1,10 @@
 package org.se.lab;
 
-public class ControllerBottom
+class ControllerBottom	// package private
 	implements ControllerState
 {
 	protected static final ControllerState INSTANCE = new ControllerBottom();
-	 
+	private ControllerBottom() {}
 	
 	@Override
 	public void handlePushUpButton(Controller c)

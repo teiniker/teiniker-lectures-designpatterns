@@ -15,7 +15,7 @@ b) Ab einer Bestellmenge (quantity) von 5 werden 5% Rabatt gegeben.
 Testen Sie Ihre Implementierung mit der Klasse "OrderServiceImplTest".
 
 Anmerkung zur Berechnung:
-	Rabatt = Listenpreis * Rabatt-%Satz / 100
+	Rabatt = Listenpreis * RabattSatzIn% / 100
 	Netto-Preis = Listenpreis - Rabatt
 	MwSt = Netto-Preis * MwSt-%Satz / 100
 	Brutto = Netto + MwSt

@@ -22,6 +22,7 @@ public class MailHandlerTest
     	handler = spamHandler;
     	spamHandler.setSuccessor(fhjHandler);
     	fhjHandler.setSuccessor(defaultHandler);    	
+    	// :Test ---> :SpamHandler ---> :FHJHandler ---> :DefaultHandler 
     }
 
     

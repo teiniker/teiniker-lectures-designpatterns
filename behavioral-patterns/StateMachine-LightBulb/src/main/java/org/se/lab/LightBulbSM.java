@@ -79,7 +79,6 @@ public class LightBulbSM
 		switch(state)
 		{
 			case OFF:
-				setState(FINAL);
 				break;
 				
 			case ON:

@@ -4,10 +4,6 @@ import java.util.List;
 
 public class ListProcessor
 {
-    /*
-     * Template Method
-     */
-    
     public void process(List<String> list)
     {
         System.out.println("ListProcessor.process()");
