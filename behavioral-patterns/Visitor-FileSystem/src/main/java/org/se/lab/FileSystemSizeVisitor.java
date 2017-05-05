@@ -15,12 +15,18 @@ public class FileSystemSizeVisitor
 	@Override
 	public void visit(File file)
 	{
+		// operation
 		size += file.getSize();
+		
+		// navigation
 	}
 
 	@Override
 	public void visit(Directory dir)
 	{
+		// operation
+		
+		// navigation
 		for(Node n : dir.getNodes())
 		{
 			visit(n);

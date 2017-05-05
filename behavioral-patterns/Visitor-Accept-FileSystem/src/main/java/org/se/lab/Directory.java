@@ -57,6 +57,9 @@ public class Directory
 	@Override
 	public void accept(FileSystemVisitor v)
 	{
+		v.visit(this);
+		
+		// navigation
 		for(Node n : getNodes())
 		{
 			n.accept(v);

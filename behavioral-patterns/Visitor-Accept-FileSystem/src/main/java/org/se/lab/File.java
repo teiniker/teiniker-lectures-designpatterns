@@ -53,5 +53,7 @@ public class File
 	public void accept(FileSystemVisitor v)
 	{
 		v.visit(this);	
+
+		// navigation
 	}
 }

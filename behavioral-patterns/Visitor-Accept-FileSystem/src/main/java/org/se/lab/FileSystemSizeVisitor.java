@@ -20,20 +20,19 @@ public class FileSystemSizeVisitor
 	@Override
 	public void visit(File file)
 	{
+		// operation
 		size += file.getSize();
 	}
 
 	@Override
 	public void visit(Directory dir)
 	{
-		for(Node n : dir.getNodes())
-		{
-			visit(n);
-		}
+		// operation
 	}
 
 	@Override
 	public void visit(Node node)
 	{
+		// operation
 	}
 }
