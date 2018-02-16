@@ -13,9 +13,9 @@ public class ArticleTableTest
 	@Before
 	public void setup()
 	{
-//		table = new ArticleTableMonitor(ArticleTable.createNewTable());
+		table = new ArticleTableMonitor(ArticleTable.createNewTable());
 	    
-	    table = ArticleTable.createNewTable();
+//	    table = ArticleTable.createNewTable();
 	    
 		table.insert(new Article(1, "The C Programming Language", 2995));
 		table.insert(new Article(3, "Practical C Programming", 2295));
