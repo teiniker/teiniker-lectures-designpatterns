@@ -24,6 +24,9 @@ Beispiel:
 2016-03-17 21:51:22,944 [main] DEBUG org.se.lab.FileServiceImpl - asString(src/test/resources/Sympathy.txt)
 2016-03-17 21:51:22,951 [main] DEBUG org.se.lab.FileServiceImpl - asList(src/test/resources/Sympathy.txt)
 
+Anmerkung: Bei diesem einfachen Beispiel können sie den Pfad "src/test/resources"
+direkt in der Factory Methode hard-coded einsetzen.
+
 
 3. Factory Method
 ---------------------------------------------------------------------
