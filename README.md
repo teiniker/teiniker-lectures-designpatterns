@@ -23,5 +23,5 @@ which gives an overview how to
 use design patterns together to solve problems. Another aspect is refactoring to and from patterns.
 
 See also: 
-[Software Design by Exampes](https://github.com/teiniker/teiniker-lectures-softwaredesign), 
+[Software Design by Exampes](https://github.com/teiniker/teiniker-lectures-softwaredesign) and 
 [Software Architectures by Examples](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
