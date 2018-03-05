@@ -6,11 +6,11 @@ You can find and use examples for the following patterns:
 1. [Creational Patterns](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/creational-patterns)
   * Abstract Factory
   
-2. Structural Patterns
+2. [Structural Patterns](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/structural-patterns)
   * Decorator
   * Adapter
   
-3. Behavioral Patterns
+3. [Behavioral Patterns](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/behavioral-patterns)
   * Template Method
   * State
   * Command
@@ -22,4 +22,6 @@ Also, ther is an upcoming section called
 which gives an overview how to
 use design patterns together to solve problems. Another aspect is refactoring to and from patterns.
 
-See also: [Software Design by Exampes](https://github.com/teiniker/teiniker-lectures-softwaredesign) 
+See also: 
+[Software Design by Exampes](https://github.com/teiniker/teiniker-lectures-softwaredesign), 
+[Software Architectures by Examples](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
