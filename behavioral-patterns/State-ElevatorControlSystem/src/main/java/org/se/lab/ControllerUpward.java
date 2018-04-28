@@ -4,7 +4,7 @@ class ControllerUpward
 	implements ControllerState
 {
 	public static final ControllerState INSTANCE = new ControllerUpward();
-	 
+	private ControllerUpward() {}
 	
 	@Override
 	public void handlePushUpButton(Controller c)

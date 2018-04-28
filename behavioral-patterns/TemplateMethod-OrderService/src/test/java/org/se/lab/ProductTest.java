@@ -5,6 +5,8 @@ import org.junit.Test;
 
 public class ProductTest
 {
+
+	// TODO: Locale
 	@Test
 	public void testToString()
 	{

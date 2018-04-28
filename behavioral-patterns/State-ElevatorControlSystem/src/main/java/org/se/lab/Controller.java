@@ -33,11 +33,11 @@ public class Controller
 	 * Association: motor:Motor
 	 */
 	private Motor motor;
-	public Motor getMotor()
+	Motor getMotor()
 	{
 		return motor;
 	}
-	public void setMotor(Motor motor)
+	void setMotor(Motor motor)
 	{
 		this.motor = motor;
 	}

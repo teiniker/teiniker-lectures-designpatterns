@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class LightBulbFinal
+class LightBulbFinal
 	implements LightBulbState
 {
 	public static final LightBulbState INSTANCE = new LightBulbFinal();

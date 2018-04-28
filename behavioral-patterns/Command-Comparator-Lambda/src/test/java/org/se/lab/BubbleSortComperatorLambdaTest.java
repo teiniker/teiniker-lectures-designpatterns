@@ -39,6 +39,7 @@ public class BubbleSortComperatorLambdaTest
 	@Test
 	public void testDescendingSorting()
 	{
+		                    //  int compare(T o1, T o2);
 		Comparator<Integer> c = (a,b) -> a-b;
 
 		int[] result = sorter.sort(c, 7, 3, 19, 123, 2, 13);
