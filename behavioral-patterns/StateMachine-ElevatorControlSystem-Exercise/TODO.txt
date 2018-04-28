@@ -1,4 +1,4 @@
-TODO: StateMachine - Elevator Control System
+Exercise: StateMachine - Elevator Control System
 ---------------------------------------------------------------------
 
 Sie sollen ein einfaches Steuersystem für einen Lift, in Form einer 
