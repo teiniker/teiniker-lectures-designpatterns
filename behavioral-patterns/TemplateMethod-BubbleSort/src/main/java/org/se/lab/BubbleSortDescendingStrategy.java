@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class BubbleSortDescentingStrategy
+public class BubbleSortDescendingStrategy
 	extends BubbleSort
 {
 	@Override

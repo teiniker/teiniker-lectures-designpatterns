@@ -12,7 +12,7 @@ public class SorterFactoryStrategyImpl
 				return new BubbleSortAscendingStrategy();
 			
 			case DESCENDING: 
-				return new BubbleSortDescentingStrategy();
+				return new BubbleSortDescendingStrategy();
 				
 			default: 
 				throw new IllegalStateException();

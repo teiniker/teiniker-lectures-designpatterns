@@ -18,7 +18,7 @@ public class BubbleSortStrategyTest
 
 
 	@Test
-	public void testAscenting()
+	public void testAscending()
 	{
 		BubbleSort bubble = factory.createSorter(SortDirection.ASCENDING);
 
