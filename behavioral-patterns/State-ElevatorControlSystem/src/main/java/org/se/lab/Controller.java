@@ -17,11 +17,11 @@ public class Controller
 	 * Property: state:State
 	 */
 	private ControllerState state = ControllerBottom.INSTANCE; // Initial state
-	public ControllerState getState()
+	ControllerState getState()
 	{
 		return state;
 	}
-	public void setState(ControllerState state)
+	void setState(ControllerState state)
 	{
 		if(motor == null)
 			throw new IllegalArgumentException();

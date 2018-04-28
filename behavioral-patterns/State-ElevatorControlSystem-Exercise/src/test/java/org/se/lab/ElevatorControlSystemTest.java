@@ -6,24 +6,24 @@ import org.junit.Test;
 
 public class ElevatorControlSystemTest
 {
-	private Controller controler;
+	private Controller controller;
 	private Motor motor;
 	
 	@Before
 	public void setup()
 	{
 		motor = new Motor();
-		controler = new Controller(motor);
+		controller = new Controller(motor);
 	}
 
 	
 	@Test
 	public void testUpAndDown()
 	{
-		controler.pushUpButton();
-		controler.endSwitchTop();
-		controler.pushDownButton();
-		controler.endSwitchBottom();
+		controller.pushUpButton();
+		controller.endSwitchTop();
+		controller.pushDownButton();
+		controller.endSwitchBottom();
 		
 		Assert.assertEquals("[clockwise, stop, counterclockwise, stop]", motor.log.toString());
 	}
@@ -31,15 +31,15 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpAndDownAndUpAndDown()
 	{
-		controler.pushUpButton();
-		controler.pushDownButton();
-		controler.pushUpButton();
-		controler.endSwitchTop();
+		controller.pushUpButton();
+		controller.pushDownButton();
+		controller.pushUpButton();
+		controller.endSwitchTop();
 		
-		controler.pushDownButton();
-		controler.pushUpButton();
-		controler.pushDownButton();		
-		controler.endSwitchBottom();
+		controller.pushDownButton();
+		controller.pushUpButton();
+		controller.pushDownButton();
+		controller.endSwitchBottom();
 		
 		Assert.assertEquals("[clockwise, counterclockwise, clockwise, stop, counterclockwise, clockwise, counterclockwise, stop]", motor.log.toString());
 	}
@@ -52,14 +52,14 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testEndSwitchBottom()
 	{
-		controler.endSwitchBottom();
+		controller.endSwitchBottom();
 		Assert.assertEquals("[]", motor.log.toString());
 	}
 
 	@Test(expected=IllegalStateException.class)
 	public void testEndSwitchTop()
 	{
-		controler.endSwitchTop();
+		controller.endSwitchTop();
 	}
 	
 
@@ -70,8 +70,8 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpUp()
 	{
-		controler.pushUpButton();
-		controler.pushUpButton();
+		controller.pushUpButton();
+		controller.pushUpButton();
 		
 		Assert.assertEquals("[clockwise]", motor.log.toString());
 	}
@@ -79,8 +79,8 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpEndSwitchTop()
 	{
-		controler.pushUpButton();
-		controler.endSwitchTop();
+		controller.pushUpButton();
+		controller.endSwitchTop();
 		
 		Assert.assertEquals("[clockwise, stop]", motor.log.toString());
 	}
@@ -88,8 +88,8 @@ public class ElevatorControlSystemTest
 	@Test(expected = IllegalStateException.class)
 	public void testUpEndSwitchBottom()
 	{
-		controler.pushUpButton();
-		controler.endSwitchBottom();
+		controller.pushUpButton();
+		controller.endSwitchBottom();
 	}
 	
 	
@@ -99,9 +99,9 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpUpUp()
 	{
-		controler.pushUpButton();
-		controler.pushUpButton();
-		controler.pushUpButton();
+		controller.pushUpButton();
+		controller.pushUpButton();
+		controller.pushUpButton();
 		
 		Assert.assertEquals("[clockwise]", motor.log.toString());
 	}
@@ -109,9 +109,9 @@ public class ElevatorControlSystemTest
 	@Test(expected = IllegalStateException.class)
 	public void testUpEndSwitchTopEndSwitchBottom()
 	{
-		controler.pushUpButton();
-		controler.endSwitchTop();
-		controler.endSwitchBottom();
+		controller.pushUpButton();
+		controller.endSwitchTop();
+		controller.endSwitchBottom();
 	}
 	
 	
@@ -122,9 +122,9 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpDownDown()
 	{
-		controler.pushUpButton();
-		controler.pushDownButton();
-		controler.pushDownButton();
+		controller.pushUpButton();
+		controller.pushDownButton();
+		controller.pushDownButton();
 		
 		Assert.assertEquals("[clockwise, counterclockwise]", motor.log.toString());
 	}
@@ -132,9 +132,9 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpDownUp()
 	{
-		controler.pushUpButton();
-		controler.pushDownButton();
-		controler.pushUpButton();
+		controller.pushUpButton();
+		controller.pushDownButton();
+		controller.pushUpButton();
 		
 		Assert.assertEquals("[clockwise, counterclockwise, clockwise]", motor.log.toString());
 	}
@@ -142,9 +142,9 @@ public class ElevatorControlSystemTest
 	@Test
 	public void testUpDownEndSwitchBottom()
 	{
-		controler.pushUpButton();
-		controler.pushDownButton();
-		controler.endSwitchBottom();
+		controller.pushUpButton();
+		controller.pushDownButton();
+		controller.endSwitchBottom();
 		
 		Assert.assertEquals("[clockwise, counterclockwise, stop]", motor.log.toString());
 	}
@@ -152,8 +152,8 @@ public class ElevatorControlSystemTest
 	@Test(expected = IllegalStateException.class)
 	public void testUpDownEndSwitchTop()
 	{
-		controler.pushUpButton();
-		controler.pushDownButton();
-		controler.endSwitchTop();
+		controller.pushUpButton();
+		controller.pushDownButton();
+		controller.endSwitchTop();
 	}
 }
