@@ -27,4 +27,4 @@ See also:
 [Software Architectures by Examples](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
 
 As a development environment, you can use a pre-configured Linux VM image:
-[Linux VM Image](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
+[Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
