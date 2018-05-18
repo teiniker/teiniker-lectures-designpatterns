@@ -26,10 +26,6 @@ public class FileSystemNumberOfFilesVisitor
 	@Override
 	public void visit(Directory dir)
 	{
-		for(Node n : dir.getNodes())
-		{
-			visit(n);
-		}
 	}
 
 	@Override
