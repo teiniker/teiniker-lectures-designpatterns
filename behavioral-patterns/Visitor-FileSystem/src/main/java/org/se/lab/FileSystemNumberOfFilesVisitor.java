@@ -15,12 +15,18 @@ public class FileSystemNumberOfFilesVisitor
 	@Override
 	public void visit(File file)
 	{
+		// Operation
 		numberOfFiles += 1;
+
+		// Navigation
 	}
 
 	@Override
 	public void visit(Directory dir)
 	{
+		// Operation
+
+		// Navigation
 		for(Node n : dir.getNodes())
 		{
 			visit(n);
