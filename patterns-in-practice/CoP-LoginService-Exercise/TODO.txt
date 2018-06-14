@@ -1,4 +1,4 @@
-TODO: Login Service (Decorator + Builder)
+Exercise: Login Service (Decorator + Builder)
 ---------------------------------------------------------------------
 
 1. Decorator Pattern
