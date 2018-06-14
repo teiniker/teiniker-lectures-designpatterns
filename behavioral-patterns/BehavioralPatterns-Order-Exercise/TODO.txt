@@ -7,7 +7,7 @@ Implementieren Sie das "OrderVisitor" Interface in einer Klasse mit dem Namen
 "TotalPriceVisitor". Diese Visitor-Implementierung soll den Gesamtpreis einer
 Bestellung (Order-Object) berechnen.
 
-Überprüfen Sie Ihre Implementierung mit der Klasse "OrderVisitorTest". I
+Überprüfen Sie Ihre Implementierung mit der Klasse "OrderVisitorTest".
 
 
 2. Command Pattern
