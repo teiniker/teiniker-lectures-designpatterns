@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class AddRequestHandler
+class AddRequestHandler // package private
 	extends HttpRequestHandler
 {
 

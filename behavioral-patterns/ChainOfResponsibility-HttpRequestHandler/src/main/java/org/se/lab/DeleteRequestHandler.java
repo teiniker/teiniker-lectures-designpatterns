@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class DeleteRequestHandler
+class DeleteRequestHandler  // package private
 	extends HttpRequestHandler
 {
 

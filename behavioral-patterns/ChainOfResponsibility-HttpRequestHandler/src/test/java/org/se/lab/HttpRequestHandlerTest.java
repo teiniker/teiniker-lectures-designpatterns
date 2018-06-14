@@ -30,7 +30,7 @@ public class HttpRequestHandlerTest
 		request.getParameters().put("lastName", "Simpson");
 		request.getParameters().put("username", "homer");
 		request.getParameters().put("password", "homer");
-		
+
 		final String SQL = "INSERT INTO user VALUES (NULL,'Homer','Simpson','homer','homer')";
 		Assert.assertEquals(SQL, handler.handleRequest(request));
 	}

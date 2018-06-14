@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class UnknownActionRequestHandler
+class UnknownActionRequestHandler // package private
 	extends HttpRequestHandler
 {
 
