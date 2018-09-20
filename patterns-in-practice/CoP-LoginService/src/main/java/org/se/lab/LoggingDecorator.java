@@ -36,5 +36,6 @@ class LoggingDecorator // package private
 	public void logout()
 	{
 		logger.info("");
+		super.logout();
 	}
 }

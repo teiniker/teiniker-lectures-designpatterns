@@ -31,7 +31,7 @@ class EncodingDecorator // package private
 	
 	/*
 	 * Utility methods
-	 * (in the case of an exam, these methods would be provided for you!
+	 * (in the case of an exam, these methods will be provided for you!
 	 */
 	private String toSHA256(String message)
 	{
@@ -44,11 +44,7 @@ class EncodingDecorator // package private
 			String hash = convertToHexString(bytes);
 			return hash;
 		}
-		catch (NoSuchAlgorithmException e)
-		{
-			throw new IllegalStateException(e);
-		}
-		catch (UnsupportedEncodingException e)
+		catch (NoSuchAlgorithmException | UnsupportedEncodingException e)
 		{
 			throw new IllegalStateException(e);
 		}
