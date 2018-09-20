@@ -8,7 +8,7 @@ public abstract class AbstractContainerVisitor
 	{
 	    // calculate 
 	    
-	    // delegate
+	    // navigation
 		for(Component c : container.getComponents())
 		{
 			visit(c);
@@ -19,6 +19,9 @@ public abstract class AbstractContainerVisitor
 	@Override
 	public void visit(Component component)
 	{
+		// calculate
+
+		// navigation
 		if(component instanceof Product)
 		{
 			visit((Product)component);

@@ -12,6 +12,9 @@ public class ContainerVisitorPrice
 	@Override
 	public void visit(Product product)
 	{
+		// calculate
 		price += product.getPrice();
+
+		// navigation
 	}
 }
