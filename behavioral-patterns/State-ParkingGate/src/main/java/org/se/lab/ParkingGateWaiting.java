@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class ParkingGateWaiting
+class ParkingGateWaiting // package private
 	implements ParkingGateState
 {
 	/*
