@@ -15,8 +15,6 @@ class FileNameDecorator // package private
     /*
      * Property: baseDir
      */
-    // Getter + Setter nicht notwendig!
-    
     private String baseDir;
     public String getBaseDir()
     {
@@ -31,12 +29,12 @@ class FileNameDecorator // package private
     @Override
     public List<String> asList(String filename)
     {
-        return super.asList(baseDir + File.separatorChar + filename);
+        return super.asList(getBaseDir() + File.separatorChar + filename);
     }
     
     @Override
     public String asString(String filename)
     {
-        return super.asString(baseDir + File.separatorChar + filename);
+        return super.asString(getBaseDir() + File.separatorChar + filename);
     }    
 }
