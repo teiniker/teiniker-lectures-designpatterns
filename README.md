@@ -1,30 +1,7 @@
-# Design Patterns by Examples
+# Design Patterns by Example
 
-This project collects examples, exercises and model solutions for the most common design patterns.
-You can find and use examples for the following patterns:
+**Starting in the summer semester of 2019, the examples of this repository were transferred to the 
+Software [Software Design by Exampe](https://github.com/teiniker/teiniker-lectures-softwaredesign) repository.
+Therefore, this repository is deprecated and will not be developed further.**
 
-1. [Creational Patterns](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/creational-patterns)
-  * Abstract Factory
-  
-2. [Structural Patterns](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/structural-patterns)
-  * Decorator
-  * Adapter
-  
-3. [Behavioral Patterns](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/behavioral-patterns)
-  * Template Method
-  * State
-  * Command
-  * Chain of Responsibility
-  * Visitor
-
-Also, ther is an upcoming section called 
-[Patterns in Practice](https://github.com/teiniker/teiniker-lectures-designpatterns/tree/master/patterns-in-practice) 
-which gives an overview how to
-use design patterns together to solve problems. Another aspect is refactoring to and from patterns.
-
-See also: 
-[Software Design by Exampes](https://github.com/teiniker/teiniker-lectures-softwaredesign) and 
-[Software Architectures by Examples](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
-
-As a development environment, you can use a pre-configured Linux VM image:
-[Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
+*Egon Teiniker, 2019, GPL v3.0*
