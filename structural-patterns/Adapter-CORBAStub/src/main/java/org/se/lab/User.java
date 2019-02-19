@@ -62,34 +62,27 @@ public class User
 	/*
 	 * Object methods
 	 */
-	
+
 	@Override
-	public int hashCode()
+	public boolean equals(Object o)
 	{
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + id;
-		return result;
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+
+		User user = (User) o;
+		return id == user.id;
 	}
 
 	@Override
-	public boolean equals(Object obj)
+	public int hashCode()
 	{
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		User other = (User) obj;
-		if (id != other.id)
-			return false;
-		return true;
+		return id;
 	}
-	
+
+
 	@Override
 	public String toString()
 	{
-		return getId() + "," + getUsername() + "," + getPassword();
+		return getId() + "," + getUsername();
 	}
 }
