@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  * This class adapts the interface of Adaptee to the target interface.
  * (Here we use an object adapter)
  */
-public class CustomLoggerAdapter
+class CustomLoggerAdapter // package private
     implements CustomLogger
 {
     /*
@@ -19,8 +19,8 @@ public class CustomLoggerAdapter
      * 
      * This is a reference to a class that needs adapting.
      */
-    private Logger logger;
-    
+    private Logger logger; // ---[1]-> Logger
+
     
     /* 
      * Constructor
