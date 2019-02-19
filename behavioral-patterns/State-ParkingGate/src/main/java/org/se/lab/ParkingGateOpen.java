@@ -7,7 +7,8 @@ class ParkingGateOpen // package private
 	 * Singleton
 	 */
 	public static final ParkingGateState INSTANCE = new ParkingGateOpen();
-	
+	private ParkingGateOpen() {}
+
 	@Override
 	public void handleCarAtGate(ParkingGate gate)
 	{
