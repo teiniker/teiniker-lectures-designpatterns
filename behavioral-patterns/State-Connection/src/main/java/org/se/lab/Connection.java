@@ -23,7 +23,7 @@ public class Connection
     
     
     /* 
-     * State methods 
+     * Trigger methods
      */
     
     public void open()
