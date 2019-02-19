@@ -8,10 +8,10 @@ public class SorterFactoryStrategyImpl
 	{
 		switch(direction)
 		{
-			case ASCENTING: 
+			case ASCENDING:
 				return new BubbleSortAscendingStrategy();
 			
-			case DESCENTING: 
+			case DESCENDING:
 				return new BubbleSortDescentingStrategy();
 				
 			default: 
