@@ -7,7 +7,6 @@ class ParkingGateLowering  // package private
 	 * Singleton
 	 */
 	public static final ParkingGateState INSTANCE = new ParkingGateLowering();
-	
 	private ParkingGateLowering() {}
 	
 	
