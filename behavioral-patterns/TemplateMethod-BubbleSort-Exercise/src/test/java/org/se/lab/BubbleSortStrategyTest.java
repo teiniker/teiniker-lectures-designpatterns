@@ -20,7 +20,7 @@ public class BubbleSortStrategyTest
 	@Test
 	public void testAscenting()
 	{
-		BubbleSort bubble = factory.createSorter(SortDirection.ASCENTING);
+		BubbleSort bubble = factory.createSorter(SortDirection.ASCENDING);
 
 		int[] result = bubble.sort(7, 3, 19, 123, 2, 13);
 
@@ -30,7 +30,7 @@ public class BubbleSortStrategyTest
 	@Test
 	public void testDescending()
 	{
-		BubbleSort bubble = factory.createSorter(SortDirection.DESCENTING);
+		BubbleSort bubble = factory.createSorter(SortDirection.DESCENDING);
 
 		int[] result = bubble.sort(7, 3, 19, 123, 2, 13);
 
